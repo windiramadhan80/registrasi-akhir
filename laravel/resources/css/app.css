@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn-primary {
+      @apply px-4 py-3 rounded-lg text-slate-100 text-xs font-semibold tracking-wider bg-primary;
+    }
+    .icon-primary {
+      @apply px-[6px] py-[8px] mx-1 bg-transparent border-2 border-primary rounded-md text-primary;
+    }
+    .base {
+      @apply flex flex-wrap items-center justify-center mx-auto px-4 mt-10;
+    }
+    .judul {
+      @apply text-center text-lg font-bold text-primary mb-1;
+    }
+  }
+
+  body {
+    @apply font-inter leading-relaxed tracking-wide;
+  }
+
+  .humberger-line {
+    @apply block w-[21px] h-[2px] mb-[5px] bg-slate-800;
+  }
+
+  .humberger-active > span:nth-child(1) {
+    @apply rotate-45;
+  }
+
+  .humberger-active > span:nth-child(2) {
+    @apply scale-0;
+  }
+
+  .humberger-active > span:nth-child(3) {
+    @apply -rotate-45;
+  }
+
+  .nav-fixed {
+    @apply fixed z-[9999] backdrop-blur-sm bg-white/80 shadow-md;
+  }
