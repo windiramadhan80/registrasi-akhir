@@ -23,7 +23,7 @@ return new class extends Migration
             $table->string('jenis_kelamin');
             $table->string('image')->default('ktm-img/default.jpg');
             $table->string('program_studi');
-            $table->string('nim')->default(null);
+            $table->string('nim')->nullable();
             $table->timestamps();
         });
     }

@@ -1,6 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/winr1227/
-    - /bin/cp -R laravel $DEPLOYPATH
-    - /bin/cp -R public_html $DEPLOYPATH
